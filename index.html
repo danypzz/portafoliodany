@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+    <!-- Icon -->
+    <link rel="icon" href="assets/icono.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div id="tsparticles"></div>
+    <header id="header">
+      <div class="logo">
+        <a href="#inicio"><img src="assets/logo.png" alt="logo" /></a>
+        
+      </div>
+
+       <div data-aos="fade-down" data-aos-delay="200" class="hamburger" onclick="toggleMenu()">
+              <i class="fas fa-bars"></i>
+            </div>
+
+      <nav class="navv" id="nav-menu">
+        
+        <a href="#sobremi">Sobre Mi</a>
+        <a href="#skill">Habilidades</a>
+        <a href="#project">Proyectos</a>
+        
+      </nav>
+
+      <div class="extra-nav">
+        <a href="#contacto"><button>Contactame!</button></a>
+      </div>
+
+
+     
+
+    </header>
+
+
+    <section id="inicio" class="inicio">
+      <div class="container">
+        <div class="content">
+          <p class="titulo">Daniel Perez</p>
+
+          <h1 data-aos="zoom-in-up">
+            Diseño y Desarrollo para tu <span id="typedtitulo"></span> web
+          </h1>
+          <div class="boton-cv" data-aos="zoom-out">
+             <a href="#project"><button class="boton-brillante" >Conoce Mis Proyectos</button></a>
+          </div>
+          <div>
+             <a href="#sobremi" class="scroll-down">
+              <i class="fas fa-angle-double-down"></i>
+
+            </a>
+          </div>
+         
+        </div>
+      </div>
+    </section>
+
+     <section id="sobremi">
+        <div class="contenedor">
+            <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300" class="imagen">
+                <img src="assets/fotoyo.webp" alt="perfil">
+            </div>
+            <div class="textodemi" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                <h1>Sobre Mi <span class="nombre">Daniel</span></h1>
+                <p>
+                  Soy estudiante universitario con entusiasmo por el desarrollo web front-end. Disfruto transformar ideas en interfaces visuales bien estructuradas, combinando HTML, CSS y JavaScript. Me interesa crear sitios que no solo se vean bien, sino que también sean intuitivos, accesibles y adaptables a distintos dispositivos. Constantemente busco mejorar mis habilidades con herramientas modernas como Angular y me esfuerzo por cuidar tanto el diseño como la experiencia del usuario
+                </p>
+                <div class="boton-cv">
+                  <a href="assets/CV-Daniel-Perez.pdf" target="_blank" download><button class="botonsobremi">Descargar CV</button></a>
+                </div>
+                
+             </div>
+
+                
+        </div>
+
+
+      </section>
+
+   
+
+
+    
+
+    <section id="skill" class="skill">
+      <div class="container">
+        <div class="content iconos">
+          <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
+            Habilidades
+          </h1>
+
+          <div class="skills" data-aos-delay="500">
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assets/icon/html5.svg" alt="html" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assets/icon/css3.svg" alt="css" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assets/icon/javascript.svg" alt="javascript" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assets/icon/typescript.svg" alt="typescript" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assets/icon/angular.svg" alt="angular" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assets/icon/bootstrap.svg" alt="bootstrap" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assets/icon/ionic.svg" alt="ionic" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assets/icon/tailwind.svg" alt="tailwind" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assets/icon/mysql.svg" alt="mysql" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assets/icon/AOS.png" alt="AOS" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assets/icon/wordpress.svg" alt="wordpress" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assets/icon/github.svg" alt="github" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="project" >
+  <div class="contenedorpro">
+    <h1 class="text-center mb-5 title" data-aos="fade-up">Proyectos</h1>
+    <div class=" proyectoscont row g-10">
+      <!-- Proyecto 1 -->
+      <div class="col-md-5" data-aos="fade-right">
+        <div class="card h-100 ">
+          <img src="assets/proyecto1.webp" class="card-img-top" alt="Proyecto 1" />
+          <div class="card-body">
+            <h1> <span class="nombrepr">UPSCOFFEE</span></h1>
+            <p class="card-text">UPsCoffee es una aplicación creada para modernizar el sistema de pedidos en la cafetería de la Universidad Politécnica de Sinaloa, permitiendo a estudiantes y personal realizar pedidos de forma rápida y sencilla desde sus dispositivos.</p>
+            <div class="iconosproyectos">
+              <img class="tag imagen" src="assets/icon/angular.svg"  alt="">
+              <img class="tag imagen" src="assets/icon/typescript.svg"  alt="">
+              <img class="tag imagen" src="assets/icon/bootstrap.svg"  alt="">
+            </div>
+             <div class="visitarproyecto">
+                 <a href="https://jonicoa.github.io/UpsCoffee/" class="botonproyecto" target="_blank">Visitar Proyecto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 2 -->
+      <div class="col-md-5" data-aos="fade-left">
+        <div class="card h-100 ">
+          <img src="assets/proyecto2.webp" class="card-img-top" alt="Proyecto 2" />
+          <div class="card-body">
+            <h1> <span class="nombrepr">Mensajeria</span></h1>
+            <h5>Usuario: Daniel</h5>
+            <p class="card-text">Aplicación de mensajería desarrollada en Ionic que permite a los usuarios comunicarse en tiempo real, conectada a Firestore para gestionar los mensajes de forma eficiente y segura, con funciones mejoradas mediante inteligencia artificial.</p>
+             <div class="iconosproyectos">
+              <img class="tag imagen" src="assets/icon/angular.svg"  alt="">
+              <img class="tag imagen" src="assets/icon/typescript.svg"  alt="">
+              <img class="tag imagen" src="assets/icon/ionic.svg"  alt="">
+            </div>
+            <div class="visitarproyecto">
+                 <a href="https://charming-lolly-1f705c.netlify.app/login" class="botonproyecto" target="_blank">Visitar Proyecto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Puedes duplicar las columnas siguientes para más proyectos -->
+    </div>
+
+    <div class=" proyectoscont row g-10">
+      <div class="col-md-5" data-aos="fade-right">
+        <div class="card h-100 ">
+          <img src="assets/prettylamb.webp" class="card-img-top" alt="Proyecto 1" />
+          <div class="card-body">
+            <h1> <span class="nombrepr">PRETTYLAMB</span></h1>
+            <p class="card-text">Pretty Lamb Site es una propuesta conceptual para una cafetería boutique que combina un ambiente cálido con un estilo moderno. El diseño pretende ofrecer una experiencia visual agradable y sofisticada, ideal para un negocio que desea destacar no solo por la calidad de sus bebidas, sino también por una identidad estética que enamore a sus visitantes.</p>
+            <div class="iconosproyectos">
+              <img class="tag imagen" src="assets/icon/angular.svg"  alt="">
+              <img class="tag imagen" src="assets/icon/typescript.svg"  alt="">
+              <img class="tag imagen" src="assets/icon/bootstrap.svg"  alt="">
+            </div>
+             <div class="visitarproyecto">
+                 <a href="https://drox-z.github.io/PrettyLamb/" class="botonproyecto" target="_blank">Visitar Proyecto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+
+      <section id="contacto">
+
+
+        <div class="formulario-container">
+           <h1 class="text-center mb-5 title" data-aos="fade-up">Contactame</h1>
+          
+          <form action="https://formsubmit.co/imdany1997@gmail.com?captcha=false" method="POST" class="formulario" data-aos="zoom-in" data-aos-duration="800">
+  
+            <input type="text" name="nombre" placeholder="Tu nombre" required 
+                   data-aos="fade-up" data-aos-delay="100">
+            
+            <input type="email" name="email" placeholder="Tu correo electrónico" required 
+                   data-aos="fade-up" data-aos-delay="200">
+            
+            <textarea name="mensaje" placeholder="Escribe tu mensaje aquí..." required 
+                      data-aos="fade-up" data-aos-delay="300"></textarea>
+            <input type="text" name="_honey" style="display:none">
+          
+            <div class="redes" data-aos="fade-up" data-aos-delay="400">
+              <a href="https://api.whatsapp.com/send?phone=16614943185" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="mailto:imdany1997@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+              
+            </div>
+            <div  data-aos="fade-up" data-aos-delay="500">
+              <button class="botoncontacto" type="submit">
+              Enviar mensaje
+            </button>
+            
+            </div>
+          
+            
+          
+          </form>
+        </div>
+        
+
+      </section>
+
+   
+
+ 
+
+   
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      let lastScrollTop = 0;
+  const header = document.getElementById("header");
+
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScroll > lastScrollTop) {
+      // Scroll hacia abajo
+      header.classList.add("hide");
+    } else {
+      // Scroll hacia arriba
+      header.classList.remove("hide");
+    }
+
+
+    if (currentScroll > 20) {
+    header.classList.add("shadow");
+  } else {
+    header.classList.remove("shadow");
+  }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+  });
+
+       var typedtitulo = new Typed("#typedtitulo", {
+      strings: ["sitio ",
+  "aplicacion"],
+      typeSpeed: 60,
+      backSpeed: 60,
+      backDelay: 1500,
+      showCursor: false,
+      cursorChar: "",
+      
+
+      loop: true
+    });
+
+
+
+    function toggleMenu() {
+    const nav = document.getElementById('nav-menu');
+    nav.classList.toggle('show');
+    
+  }
+
+  document.addEventListener('click', function(event) {
+    const menu = document.getElementById('nav-menu');
+    const hamburger = document.querySelector('.hamburger');
+    const menuContainer = document.getElementById('menu-container');
+
+    // Verificar si el clic fue fuera del menú y la hamburguesa
+    if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+      menu.classList.remove('show'); // Cerrar el menú
+    }
+  });
+
+  const menuLinks = document.querySelectorAll('#nav-menu a');
+  menuLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      const menu = document.getElementById('nav-menu');
+      menu.classList.remove('show'); // Cerrar el menú
+    });
+  });
+
+
+
+    tsParticles.load("tsparticles", {
+    background: {
+      color: "#000000"
+    },
+    fullScreen: {
+      enable: false
+    },
+    particles: {
+      number: {
+        value: 80,
+        density: {
+          enable: true,
+          area: 800
+        }
+      },
+      color: {
+        value: "#ffffff"
+      },
+      links: {
+        enable: true,
+        distance: 150,
+        color: "#ffffff",
+        opacity: 0.2,
+        width: 1
+      },
+      move: {
+        enable: true,
+        speed: 1,
+        direction: "none",
+        outModes: {
+          default: "bounce"
+        }
+      },
+      size: {
+        value: 2
+      },
+      opacity: {
+        value: 0.5
+      }
+    },
+    interactivity: {
+      events: {
+        onHover: {
+          enable: true,
+          mode: "grab"
+        },
+        resize: true
+      },
+      modes: {
+        grab: {
+          distance: 200,
+          links: {
+            opacity: 0.3
+          }
+        }
+      }
+    }
+  });
+    </script>
+   
+  </body>
+</html>
